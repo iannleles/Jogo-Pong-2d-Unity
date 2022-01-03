@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) || pontuacaoDoJogador1 == 50 || pontuacaoDoJogador2 == 50)
-        {
+        {            
             ReiniciarPartida();
         }
         if (Input.GetKeyDown(KeyCode.Escape))
