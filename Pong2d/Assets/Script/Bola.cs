@@ -35,7 +35,14 @@ public class Bola : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         somDaBola.Play();
-        oRigidyBody2d.velocity += new Vector2(direcaoAleatoriaX, direcaoAleatoriaY);
+        if (oRigidyBody2d.velocity.x > 0 && oRigidyBody2d.velocity.y > 0)
+        {
+            oRigidyBody2d.velocity += new Vector2(direcaoAleatoriaX, direcaoAleatoriaY);
+        }
+        else
+        {
+            oRigidyBody2d.velocity += new Vector2(-direcaoAleatoriaX, -direcaoAleatoriaY);
+        }
 
     }
 }

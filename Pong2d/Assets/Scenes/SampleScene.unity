@@ -648,8 +648,8 @@ MonoBehaviour:
   velocidadeDaBola: 7
   oRigidyBody2d: {fileID: 574049088}
   somDaBola: {fileID: 574049093}
-  direcaoAleatoriaX: 0.5
-  direcaoAleatoriaY: 0.5
+  direcaoAleatoriaX: 0.1
+  direcaoAleatoriaY: 0
 --- !u!82 &574049093
 AudioSource:
   m_ObjectHideFlags: 0
